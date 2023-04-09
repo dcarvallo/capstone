@@ -1,6 +1,6 @@
 const FormField = ({ children, label, htmlFor, hasError, errorMessage }) => {
   return (
-    <div className="form-field">
+    <div className="form-field block text-gray-700 text-sm font-bold mb-2">
       <label htmlFor={htmlFor}>{label}</label>
       {children}
       {hasError && errorMessage ? 
