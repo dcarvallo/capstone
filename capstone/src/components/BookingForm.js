@@ -47,7 +47,7 @@ const BookingForm = ({
     onSubmit={handleFormSubmit}>
       <div className="md:flex md:items-center mb-6">
 
-        <div class="md:w-1/3">
+        <div className="md:w-1/3">
 
           <FormField
             className='block text-gray-700 text-sm font-bold mb-2' 
@@ -58,7 +58,7 @@ const BookingForm = ({
           />
         </div>
       
-        <div class="md:w-2/3">
+        <div className="md:w-2/3">
         
           <input 
             type="date" 
@@ -74,7 +74,7 @@ const BookingForm = ({
       </div>
       <div className="md:flex md:items-center mb-6">
 
-        <div class="md:w-1/3">
+        <div className="md:w-1/3">
 
           <FormField 
             label="Time" 
@@ -83,7 +83,7 @@ const BookingForm = ({
             errorMessage='Please choose a valid time'
             />
         </div>
-        <div class="md:w-2/3">
+        <div className="md:w-2/3">
           <select 
             id="booking-time" 
             className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
@@ -102,7 +102,7 @@ const BookingForm = ({
       </div>
       <div className="md:flex md:items-center mb-6">
 
-        <div class="md:w-1/3">
+        <div className="md:w-1/3">
           <FormField 
             label="Number of guests" 
             htmlFor="booking-number-guests" 
@@ -110,7 +110,7 @@ const BookingForm = ({
             errorMessage='Please enter a number between 1 and 10'
           />
         </div>
-        <div class="md:w-2/3">
+        <div className="md:w-2/3">
 
           <input 
               type="number" 
@@ -128,7 +128,7 @@ const BookingForm = ({
       </div>
       <div className="md:flex md:items-center mb-6">
 
-        <div class="md:w-1/3">
+        <div className="md:w-1/3">
 
           <FormField 
             label="Occasion" 
@@ -138,7 +138,7 @@ const BookingForm = ({
           />
           
         </div>
-        <div class="md:w-2/3">
+        <div className="md:w-2/3">
           <select 
             id="booking-occasion" 
             className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
@@ -156,7 +156,7 @@ const BookingForm = ({
         </div>
       </div>
 
-      <div class="flex justify-center">
+      <div className="flex justify-center">
         <button 
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
           type="submit" 

@@ -4,6 +4,7 @@ const About = () => {
 
   return (
     <>
+    <h4>In construction</h4>
     </>
   );
 };

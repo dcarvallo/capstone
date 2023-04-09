@@ -4,8 +4,8 @@ import Nav from "./Nav";
 const Header = () => {
 
   return (
-    <div className="flex justify-around bg-slate-600">
-      <img src="logo.png" width={80}/>
+    <div className="flex justify-around bg-green-600">
+      <img src="logo.jpg" width={80}/>
       <Nav />
     </div>
   );

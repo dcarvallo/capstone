@@ -5,25 +5,23 @@ import About from "./components/About.js"
 import Contact from "./components/Contact.js"
 import Main from "./components/Main";
 import ConfirmedBooking from './components/ConfirmedBooking';
+import Footer from './components/Footer';
+import Booking from './components/Booking';
 
 function App() {
   return (
     <>
     <Header />
-    <div className='container mx-auto p-8 '>
-
-    <Routes> 
-        <Route path="/" element={<About />}></Route>
+    <div className='container mx-auto p-8 min-h-[70vh]'>
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/booking" element={<Main />}></Route>
+        <Route path="/booking" element={<Booking />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path='/confirmedBooking' element={<ConfirmedBooking />}></Route>
       </Routes>
     </div>
-      {/* <Main /> */}
-      <footer>
-
-      </footer>
+      <Footer />
     </>
   );
 }

@@ -4,6 +4,7 @@ const Contact = () => {
 
   return (
     <>
+    <h4>In construction</h4>
     </>
   );
 };

@@ -2,7 +2,6 @@ import React,{useReducer, useEffect} from "react";
 import { useNavigate } from 'react-router-dom';
 import BookingForm from "./BookingForm";
 import { submitAPI, fetchAPI } from '../MetaAPI';
-import pages from "./pages";
 
 // const availableTimes = ["08:00","10:00", "15:00"]
 
@@ -24,13 +23,13 @@ const Booking = () => {
   const navigate = useNavigate();
   const submitData = formData => {
     const response = submitAPI(formData);
-    if (response) navigate(pages.get('confirmedBooking').path);
+    if (response) navigate('/confirmedBooking');
   }; 
 
   return (
     <>
       <div className="bookings">
-        <h2>Table Booking</h2>
+        <h2 className="text-2xl my-8 text-center">Table Booking</h2>
         <BookingForm 
           availableTimes={availableTimes} 
           dispatchOnDateChange={6} 
