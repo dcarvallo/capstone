@@ -1,22 +1,24 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import About from "./About.js"
+import Contact from "./Contact.js"
+import Booking from "./Booking.js"
+import Main from "./Main.js";
 
 const Nav = () => {
 
   return (
-    <ul className="flex items-center">
-      <li className="mr-6">
-        <a className="text-blue-500 hover:text-blue-800" href="#">Active</a>
-      </li>
-      <li className="mr-6">
-        <a className="text-blue-500 hover:text-blue-800" href="#">Link</a>
-      </li>
-      <li className="mr-6">
-        <a className="text-blue-500 hover:text-blue-800" href="#">Link</a>
-      </li>
-      <li className="mr-6">
-        <a className="text-gray-400 cursor-not-allowed" href="#">Disabled</a>
-      </li>
-    </ul>
+    <> 
+      <nav className="flex items-center">
+        <div className="align-middle">
+          <Link to="/" className="mr-6 text-blue-500 hover:text-blue-800">Homepage</Link>
+        <Link to="/about" className="mr-6 text-blue-500 hover:text-blue-800">About Little Lemon</Link>
+        <Link to="/Booking" className="mr-6 text-blue-500 hover:text-blue-800">Reservation</Link>
+        <Link to="/contact" className="mr-6 text-blue-500 hover:text-blue-800">Contact</Link>
+        </div>
+      </nav>
+        
+     </>
   );
 };
 
